@@ -20,26 +20,18 @@
 // FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
 // IN THE SOFTWARE.
 
-#ifndef OTK_MATERIAL_CUDA_BSDF_LAMBERTIAN_HPP_
-#define  OTK_MATERIAL_CUDA_BSDF_LAMBERTIAN_HPP_
+#ifndef OTK_MATERIAL_HOST_LAMBERTIAN_HPP_
+#define OTK_MATERIAL_HOST_LAMBERTIAN_HPP_
 
 namespace otk
 {
 
+
 class Lambertian
 {
-public:
-    float pdf() const;
-    
-    float evaluate() const;
-
-    float sample() const;
-private:
-
-    optix::float3 m_reflectivity
 };
+
 
 }
 
-
-#endif // OTK_MATERIAL_CUDA_BSDF_LAMBERTIAN_HPP_
+#endif // OTK_MATERIAL_HOST_LAMBERTIAN_HPP_
